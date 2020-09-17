@@ -1,0 +1,18 @@
+.button {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding: 1em 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: .5s;
+}
+
+.button:hover {
+  background: #F12C49;
+  box-shadow: 5px 5px 0px rgba(0,0,0,.3);
+  transform: translateY(-7px);
+}

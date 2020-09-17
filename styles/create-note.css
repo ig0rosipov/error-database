@@ -10,13 +10,6 @@
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/__flex-container/main__flex-container.css);
 
-/* ------------------------------category------------------------------ */
-
-@import url(../blocks/category/category.css);
-@import url(../blocks/category/__caption/category__caption.css);
-@import url(../blocks/category/__heading/category__heading.css);
-@import url(../blocks/category/__link/category__link.css);
-
 
 /* ------------------------------mixes------------------------------ */
 
