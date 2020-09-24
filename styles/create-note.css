@@ -30,3 +30,11 @@
 @import url(../blocks/button/_theme/button_theme_white.css);
 @import url(../blocks/link/link.css);
 @import url(../blocks/input/input.css);
+
+
+/* ------------------------------popup------------------------------ */
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+
+/* @import url(../blocks/);  template*/
