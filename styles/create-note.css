@@ -17,7 +17,15 @@
 @import url(../blocks/main/__flex-container/main__flex-container.css);
 
 
+/* ------------------------------section------------------------------ */
+
+@import url(../blocks/new-machine/new-machine.css);
+@import url(../blocks/new-machine/__form/new-machine__form.css);
+@import url(../blocks/new-machine/__name/new-machine__name.css);
+@import url(../blocks/new-machine/__submit-button/new-machine__submit-button.css);
+
 /* ------------------------------mixes------------------------------ */
 
 @import url(../blocks/button/button.css);
+@import url(../blocks/button/_theme/button_theme_white.css);
 @import url(../blocks/link/link.css);
