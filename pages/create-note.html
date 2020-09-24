@@ -22,40 +22,47 @@
       <section class="new-error">
         <form action="#" class="form">
           <label class="form__label">
-            <h3 class="form__label-name">Название ошибки</h3>
+            <h3 class="form__label-name">Выберите оборудование</h3>
             <select name="" id="" class="form__select">
               <option value="" class="form__option">Lorem Ipsum</option>
               <option value="" class="form__option">Lorem Ipsum</option>
               <option value="" class="form__option">Lorem Ipsum</option>
             </select>
+            <button class="input">Добавить</button>  <!-- TODO -->
           </label>
           <label class="form__label">
-            <h3 class="form__label-name">Название ошибки</h3>
-            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <h3 class="form__label-name">Выберите тип неисправности</h3>
+            <select name="" id="" class="form__select">
+              <option value="" class="form__option">Механика</option>
+              <option value="" class="form__option">Электрика</option>
+
+            </select>
           </label>
           <label class="form__label">
-            <h3 class="form__label-name">Название ошибки</h3>
-            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <h3 class="form__label-name">Наименование неисправности</h3>
+            <textarea name="" id="" required></textarea>
           </label>
           <label class="form__label">
-            <h3 class="form__label-name">Название ошибки</h3>
-            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <h3 class="form__label-name">Описание неисправности</h3>
+            <textarea name="" id="" required></textarea>
           </label>
           <label class="form__label">
-            <h3 class="form__label-name">Название ошибки</h3>
-            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <h3 class="form__label-name">Варианты решения</h3>
+            <textarea name="" id="" required></textarea>
           </label>
           <label class="form__label">
-            <h3 class="form__label-name">Название ошибки</h3>
-            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <h3 class="form__label-name">Выберите изображение</h3>
+            <input type="file" class="form_image-imput">
           </label>
+          <button class="form__submit-button button">Отправить</button>
         </form>
       </section>
 
       <section class="new-machine popup">
         <form action="#" class="new-machine__form">
-          <input type="text" class="new-machine__name input" placeholder="Название машины" required>
-          <button class="new-machine__submit-button button button_theme_white">Добавить</button>
+            <h2 class="new-machine__heading">Добавить оборудование</h2>
+            <input type="text" class="new-machine__name input" placeholder="Название машины" required>
+            <button class="new-machine__submit-button button button_theme_white">Добавить</button>
         </form>
       </section>
 

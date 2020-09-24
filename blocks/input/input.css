@@ -1,9 +1,9 @@
 .input {
-  font-size: 17px;
-  line-height: 2;
+  background: none;
   outline: none;
   padding: 0;
   border: none;
   border-bottom: 1px solid black;
   align-self: stretch;
+  cursor: pointer;
 }

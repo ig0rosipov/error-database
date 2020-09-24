@@ -23,6 +23,7 @@
 @import url(../blocks/new-machine/__form/new-machine__form.css);
 @import url(../blocks/new-machine/__name/new-machine__name.css);
 @import url(../blocks/new-machine/__submit-button/new-machine__submit-button.css);
+@import url(../blocks/new-machine/__heading/new-machine__heading.css);
 
 /* ------------------------------mixes------------------------------ */
 
@@ -36,5 +37,12 @@
 
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
+
+/* ------------------------------form------------------------------ */
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__label-name/form__label-name.css);
+@import url(../blocks/form/__textarea/form__textarea.css);
+
 
 /* @import url(../blocks/);  template*/
