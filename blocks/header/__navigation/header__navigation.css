@@ -1,0 +1,6 @@
+.header__navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-right: 40px;
+}
