@@ -24,6 +24,7 @@
 @import url(../blocks/new-machine/__name/new-machine__name.css);
 @import url(../blocks/new-machine/__submit-button/new-machine__submit-button.css);
 @import url(../blocks/new-machine/__heading/new-machine__heading.css);
+@import url(../blocks/new-machine/__input-wrapper/new-machine__input-wrapper.css);
 
 /* ------------------------------new-error-section------------------------------ */
 @import url(../blocks/new-error/new-error.css);

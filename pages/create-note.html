@@ -24,7 +24,7 @@
 
       <section class="new-error">
         <h1 class="main__heading">Добавить неисправность</h1>
-        <form action="#" class="form sizer">
+        <form action="#" class="new-error-form form sizer">
           <ul class="form__container">
             <li class="form__field spacer">
               <label>
@@ -78,10 +78,12 @@
       </section>
 
       <section class="new-machine popup">
-        <form action="#" class="new-machine__form">
+        <form action="#" class="new-machine__form form">
           <h2 class="new-machine__heading">Добавить оборудование</h2>
-          <input type="text" class="new-machine__name input" placeholder="Название машины" required>
-          <button class="new-machine__submit-button button button_theme_white">Добавить</button>
+          <div class="new-machine__input-wrapper">
+            <input type="text" class="new-machine__name input" placeholder="Название машины" required>
+            <button class="new-machine__submit-button button">Добавить</button>
+          </div>
         </form>
       </section>
 
