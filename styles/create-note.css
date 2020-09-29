@@ -51,7 +51,6 @@
 /* ------------------------------mixes------------------------------ */
 
 @import url(../blocks/button/button.css);
-@import url(../blocks/button/_theme/button_theme_white.css);
 @import url(../blocks/link/link.css);
 @import url(../blocks/input/input.css);
 @import url(../blocks/sizer/sizer.css);
