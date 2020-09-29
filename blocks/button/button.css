@@ -1,19 +1,21 @@
 .button {
-  color: black;
-  background: white;
-  border-radius: 10px;
   text-decoration: none;
-  box-sizing: border-box;
-  padding: 1em;
-  font-size: 14px;
+  background: none;
+  border: 2px solid rgba(255,255,255);
+  color: white;
+  height: 45px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 2px;
+  text-transform: uppercase;
   text-align: center;
-  transition: .5s;
-  border: none;
-  outline: none;
+  padding: 0px 20px;
+  box-sizing: border-box;
   cursor: pointer;
-  min-width: 120px;
+  transition: background .3s ease-out ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {

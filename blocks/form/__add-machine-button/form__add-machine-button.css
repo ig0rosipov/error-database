@@ -1,0 +1,13 @@
+.form__add-machine-button {
+  background: none;
+  border: none;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  outline: none;
+  text-decoration: underline;
+  color: rgba(255,255,255,.7);
+  font-size: 12px;
+  line-height: 1.25;
+  cursor: pointer;
+}

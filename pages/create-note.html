@@ -1,75 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/create-note.css">
-  <title>Document</title>
+  <title>Регистрация неисправиности</title>
 </head>
+
 <body>
   <div class="root">
     <header class="header">
       <a href="./index.html" class="header__logo">
       </a>
       <nav class="header__navigation">
-        <a href="" class="header__link link">На главную</a>
-        <a href="" class="header__link link">На главную</a>
+        <a href="" class="header__link link">Электрика</a>
+        <a href="" class="header__link link">Механика</a>
         <a href="" class="header__link link">На главную</a>
       </nav>
     </header>
+
     <main class="main">
 
       <section class="new-error">
-        <form action="#" class="form">
-          <label class="form__label">
-            <h3 class="form__label-name">Выберите оборудование</h3>
-            <select name="" id="" class="form__select">
-              <option value="" class="form__option">Lorem Ipsum</option>
-              <option value="" class="form__option">Lorem Ipsum</option>
-              <option value="" class="form__option">Lorem Ipsum</option>
-            </select>
-            <button class="input">Добавить</button>  <!-- TODO -->
-          </label>
-          <label class="form__label">
-            <h3 class="form__label-name">Выберите тип неисправности</h3>
-            <select name="" id="" class="form__select">
-              <option value="" class="form__option">Механика</option>
-              <option value="" class="form__option">Электрика</option>
+        <h1 class="main__heading">Добавить неисправность</h1>
+        <form action="#" class="form sizer">
+          <ul class="form__container">
+            <li class="form__field spacer">
+              <label>
+                <h3 class="form__field-name">Выберите оборудование</h3>
+                <select name="" id="" class="form__select select">
+                  <option value="" class="form__option">Lorem Ipsum</option>
+                  <option value="" class="form__option">Lorem Ipsum</option>
+                  <option value="" class="form__option">Lorem Ipsum</option>
+                </select>
+                <button class="form__add-machine-button">Добавить оборудование</button> <!-- TODO -->
+              </label>
+            </li>
+            <li class="form__field spacer">
+              <label>
+                <h3 class="form__field-name">Выберите тип неисправности</h3>
+                <select name="" id="" class="form__select select">
+                  <option value="" class="form__option">Механика</option>
+                  <option value="" class="form__option">Электрика</option>
+                </select>
+              </label>
+            </li>
+            <li class="form__field spacer">
+              <label>
+                <h3 class="form__field-name">Наименование неисправности</h3>
+                <textarea class="form__textarea textarea" rows="1" required></textarea>
+              </label>
+            </li>
+            <li class="form__field spacer">
+              <label>
+                <h3 class="form__field-name">Описание неисправности</h3>
+                <textarea class="form__textarea textarea" rows="1" required></textarea>
+              </label>
+            </li>
+            <li class="form__field spacer">
+              <label>
+                <h3 class="form__field-name">Варианты решения</h3>
+                <textarea class="form__textarea textarea" rows="1" required></textarea>
+              </label>
+            </li>
+            <li class="form__field spacer">
+              <label>
+                <h3 class="form__field-name">Выберите изображение</h3>
+                <div class="form__fake-input button">Выбрать</div>
+                <input type="file" class="form__image-input hidden">
+              </label>
+            </li>
+          </ul>
 
-            </select>
-          </label>
-          <label class="form__label">
-            <h3 class="form__label-name">Наименование неисправности</h3>
-            <textarea name="" id="" required></textarea>
-          </label>
-          <label class="form__label">
-            <h3 class="form__label-name">Описание неисправности</h3>
-            <textarea name="" id="" required></textarea>
-          </label>
-          <label class="form__label">
-            <h3 class="form__label-name">Варианты решения</h3>
-            <textarea name="" id="" required></textarea>
-          </label>
-          <label class="form__label">
-            <h3 class="form__label-name">Выберите изображение</h3>
-            <input type="file" class="form_image-imput">
-          </label>
           <button class="form__submit-button button">Отправить</button>
         </form>
       </section>
 
       <section class="new-machine popup">
         <form action="#" class="new-machine__form">
-            <h2 class="new-machine__heading">Добавить оборудование</h2>
-            <input type="text" class="new-machine__name input" placeholder="Название машины" required>
-            <button class="new-machine__submit-button button button_theme_white">Добавить</button>
+          <h2 class="new-machine__heading">Добавить оборудование</h2>
+          <input type="text" class="new-machine__name input" placeholder="Название машины" required>
+          <button class="new-machine__submit-button button button_theme_white">Добавить</button>
         </form>
       </section>
 
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__author">IO, 2020</p>
+    </footer>
   </div>
 
   <script src="../scripts/popup.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,10 @@
-.input {
-  background: none;
+.select {
+  width: 100%;
+  color: white;
+  background: #393939;
   outline: none;
-  padding: 0;
+  padding: 8px 4px;
+  box-sizing: border-box;
   border: none;
   border-bottom: 1px solid white;
   align-self: stretch;
