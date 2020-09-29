@@ -12,12 +12,10 @@ const closingByEsc = (event) => {
 
 const togglePopup = (popupName) => {
   popupName.classList.toggle('popup_opened');
-  debugger;
   if (popupName.classList.contains('popup_opened')) {
     document.addEventListener('keyup', closingByEsc);
   } else {
     document.removeEventListener('keyup', closingByEsc);
-    debugger;
   }
 
 }
