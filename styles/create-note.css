@@ -58,8 +58,8 @@
 @import url(../blocks/sizer/sizer.css);
 @import url(../blocks/spacer/spacer.css);
 @import url(../blocks/select/select.css);
-@import url(../blocks/textarea/textarea.css);
 @import url(../blocks/hidden/hidden.css);
 
-
+/* ------------------------------validation------------------------------ */
+@import url(../blocks/input-error/input-error.css);
 /* @import url(../blocks/);  template*/

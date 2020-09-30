@@ -1,8 +1,11 @@
 .input {
+  box-sizing: border-box;
+  color: white;
+  padding: 8px 4px;
   background: none;
-  outline: none;
   border: none;
   border-bottom: 1px solid white;
-  align-self: stretch;
-  cursor: pointer;
+  outline: none;
+  resize: none;
+  overflow: hidden;
 }
