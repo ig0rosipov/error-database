@@ -32,6 +32,7 @@
 /* ------------------------------form------------------------------ */
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__field/form__field.css);
+@import url(../blocks/form/__field/_type/form__field_type_error.css);
 @import url(../blocks/form/__field-name/form__field-name.css);
 @import url(../blocks/form/__textarea/form__textarea.css);
 @import url(../blocks/form/__container/form__container.css);
@@ -56,6 +57,7 @@
 @import url(../blocks/link/link.css);
 @import url(../blocks/input/input.css);
 @import url(../blocks/input/_type/input_type_error.css);
+@import url(../blocks/input/_type/input_type_correct.css);
 @import url(../blocks/sizer/sizer.css);
 @import url(../blocks/spacer/spacer.css);
 @import url(../blocks/select/select.css);
@@ -63,4 +65,5 @@
 
 /* ------------------------------validation------------------------------ */
 @import url(../blocks/input-error/input-error.css);
+@import url(../blocks/input-error/_displayed/input-error_displayed.css);
 /* @import url(../blocks/);  template*/

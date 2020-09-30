@@ -8,4 +8,5 @@
   outline: none;
   resize: none;
   overflow: hidden;
+  transition: .3s;
 }

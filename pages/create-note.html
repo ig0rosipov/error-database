@@ -24,7 +24,7 @@
 
       <section class="new-error">
         <h1 class="main__heading">Добавить неисправность</h1>
-        <form action="#" class="new-error-form form sizer">
+        <form action="#" class="new-error-form form sizer" novalidate>
           <ul class="form__container">
             <li class="form__field spacer">
               <label>
@@ -67,7 +67,7 @@
                 <h3 class="form__field-name">Варианты решения</h3>
                 <textarea id="fault-solve" class="form__textarea input" rows="1" minlength="2" placeholder="Как можно исправить?"
                   required></textarea>
-                  <span class="input-error fault-solve-error></span>
+                  <span class="input-error fault-solve-error"></span>
               </label>
             </li>
             <li class="form__field spacer">
@@ -84,11 +84,11 @@
       </section>
 
       <section class="new-machine popup">
-        <form action="#" class="new-machine__form form">
+        <form action="#" class="new-machine__form form" novalidate>
           <button class="popup__close-button"></button>
           <h2 class="new-machine__heading">Добавить оборудование</h2>
           <div class="new-machine__input-wrapper">
-            <input type="text" id="machine-name" class="new-machine__name input" minlength="1" placeholder="Название машины" required>
+            <input type="text" id="machine-name" class="new-machine__name input" minlength="2" placeholder="Название машины" required>
             <button class="new-machine__submit-button button">Добавить</button>
           </div>
           <span class="input-error machine-name-error"></span>
@@ -104,6 +104,7 @@
   <script src="../scripts/popup.js"></script>
   <script src="../scripts/file-input.js"></script>
   <script src="../scripts/autosize-textarea.js"></script>
+  <script src="../scripts/validation.js"></script>
 </body>
 
 </html>
