@@ -49,7 +49,7 @@
             <li class="form__field spacer">
               <label>
                 <h3 class="form__field-name">Наименование неисправности</h3>
-                <textarea class="form__textarea input js-input" rows="1" minlength="2" placeholder="Введите название"
+                <textarea id="fault-name" class="form__textarea input" rows="1" minlength="2" placeholder="Введите название"
                   required></textarea>
                   <span class="input-error">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maxime.</span>
               </label>
@@ -57,7 +57,7 @@
             <li class="form__field spacer">
               <label>
                 <h3 class="form__field-name">Описание неисправности</h3>
-                <textarea class="form__textarea input js-input" rows="1" minlength="2" placeholder="Опишите неисправность"
+                <textarea id="fault-description" class="form__textarea input" rows="1" minlength="2" placeholder="Опишите неисправность"
                   required></textarea>
                   <span class="input-error"></span>
               </label>
@@ -65,7 +65,7 @@
             <li class="form__field spacer">
               <label>
                 <h3 class="form__field-name">Варианты решения</h3>
-                <textarea class="form__textarea input js-input" rows="1" minlength="2" placeholder="Как можно исправить?"
+                <textarea id="fault-solve" class="form__textarea input" rows="1" minlength="2" placeholder="Как можно исправить?"
                   required></textarea>
                   <span class="input-error"></span>
               </label>
@@ -88,7 +88,7 @@
           <button class="popup__close-button"></button>
           <h2 class="new-machine__heading">Добавить оборудование</h2>
           <div class="new-machine__input-wrapper">
-            <input type="text" class="new-machine__name input js-input" minlength="1" placeholder="Название машины" required>
+            <input type="text" id="machine-name" class="new-machine__name input" minlength="1" placeholder="Название машины" required>
             <button class="new-machine__submit-button button">Добавить</button>
           </div>
           <span class="input-error"></span>
