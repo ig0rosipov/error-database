@@ -1,4 +1,5 @@
-const inputList = Array.from(document.querySelectorAll('.js-input'));
+const inputList = Array.from(document.querySelectorAll('input'));
+
 
 const setValidationListeners = () => {
 
