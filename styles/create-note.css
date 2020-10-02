@@ -21,8 +21,6 @@
 
 @import url(../blocks/new-machine/new-machine.css);
 @import url(../blocks/new-machine/__form/new-machine__form.css);
-@import url(../blocks/new-machine/__name/new-machine__name.css);
-@import url(../blocks/new-machine/__submit-button/new-machine__submit-button.css);
 @import url(../blocks/new-machine/__heading/new-machine__heading.css);
 @import url(../blocks/new-machine/__input-wrapper/new-machine__input-wrapper.css);
 
@@ -55,6 +53,7 @@
 /* ------------------------------mixes------------------------------ */
 
 @import url(../blocks/button/button.css);
+@import url(../blocks/button/_disabled/button_disabled.css);
 @import url(../blocks/link/link.css);
 @import url(../blocks/input/input.css);
 @import url(../blocks/input/_type/input_type_error.css);

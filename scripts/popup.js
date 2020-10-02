@@ -1,6 +1,5 @@
-const newErorrForm = document.querySelector('.new-error-form');
-const addMachineButton = newErorrForm.querySelector('.form__add-machine-button');
 const popup = document.querySelector('.popup');
+const addMachineButton = document.querySelector('.form__add-machine-button');
 const closeButton = popup.querySelector('.popup__close-button');
 
 const closingByEsc = (event) => {
