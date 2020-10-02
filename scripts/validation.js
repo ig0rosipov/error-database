@@ -1,29 +1,38 @@
 const formList = Array.from(document.forms);
 
-const showError = (item) => {
+const selectorsObject = {
+  errorField: 'form__field_type_error',
+  displayedError: 'input-error_displayed',
+  correctInput: 'input_type_correct',
+  errorInput: 'input_type_error',
+  submitButton: '.form__submit-button',
+  disabledButton: 'button_disabled',
+  input: '.input'
+}
+
+const showError = (item, selectors) => {
   if (item.id !== 'machine-name') {
     const formField = item.parentElement.parentElement;
-    formField.classList.add('form__field_type_error');
+    formField.classList.add(selectors.errorField);
   }
 
   const faultMessage = document.querySelector(`.${item.id}-error`);
   faultMessage.textContent = item.validationMessage;
-  faultMessage.classList.add('input-error_displayed');
-  item.classList.remove('input_type_correct');
-  item.classList.add('input_type_error');
-
+  faultMessage.classList.add(selectors.displayedError);
+  item.classList.remove(selectors.correctInput);
+  item.classList.add(selectors.errorInput);
 }
 
-const hideError = (item) => {
-  if (item.id !== 'new-machine') {
+const hideError = (item, selectors) => {
+  if (item.id !== 'machine-name') {
     const formField = item.parentElement.parentElement;
-    formField.classList.remove('form__field_type_error');
+    formField.classList.remove(selectors.errorField);
   }
   const faultMessage = document.querySelector(`.${item.id}-error`);
   faultMessage.textContent = '';
-  faultMessage.classList.remove('input-error_displayed');
-  item.classList.remove('input_type_error');
-  item.classList.add('input_type_correct');
+  faultMessage.classList.remove(selectors.displayedError);
+  item.classList.remove(selectors.errorInput);
+  item.classList.add(selectors.correctInput);
 }
 
 const hasInvaldInput = (inputs) => {
@@ -32,42 +41,42 @@ const hasInvaldInput = (inputs) => {
   })
 }
 
-const toggleButtonState = (form, inputs) => {
-  const submitButton = form.querySelector('.form__submit-button');
+const toggleButtonState = (form, inputs, selectors) => {
+  const submitButton = form.querySelector(selectors.submitButton);
   if(hasInvaldInput(inputs)) {
     submitButton.setAttribute("disabled", "true");
-    submitButton.classList.add('button_disabled');
+    submitButton.classList.add(selectors.disabledButton);
   } else {
-    submitButton.classList.remove('button_disabled');
+    submitButton.classList.remove(selectors.disabledButton);
     submitButton.removeAttribute("disabled");
   }
 
 }
 
-const checkInputValidity = (item) => {
+const checkInputValidity = (item, selectors) => {
   if (!item.validity.valid) {
-    showError(item);
+    showError(item, selectors);
   } else {
-    hideError(item);
+    hideError(item, selectors);
   }
 }
 
-const setValidationListeners = (form) => {
-  const inputList = Array.from(form.querySelectorAll('.input'));
-  toggleButtonState(form, inputList);
+const setValidationListeners = (form, selectors) => {
+  const inputList = Array.from(form.querySelectorAll(selectors.input));
+  toggleButtonState(form, inputList, selectors);
   inputList.forEach(item => {
     item.addEventListener('input', () => {
-      checkInputValidity(item);
-      toggleButtonState(form, inputList);
+      checkInputValidity(item, selectors);
+      toggleButtonState(form, inputList, selectors);
     })
   });
 }
 
 
-const enableValidation = () => {
-  formList.forEach(form => {
-    setValidationListeners(form);
+const enableValidation = (forms, selectors) => {
+  forms.forEach(form => {
+    setValidationListeners(form, selectors);
   });
 };
 
-enableValidation(formList);
+enableValidation(formList, selectorsObject);
