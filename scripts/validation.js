@@ -29,13 +29,12 @@ const hideError = (item) => {
 
 const setValidationListeners = () => {
   inputList.forEach(item => {
-    item.addEventListener('input', ()=> {
-      if (!item.validity.valid){
+    item.addEventListener('input', () => {
+      if (!item.validity.valid) {
         showError(item);
       } else {
         hideError(item);
       }
-
     })
   });
 }
