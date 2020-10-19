@@ -1,7 +1,23 @@
 const background = document.querySelector('.root__background');
 
+let newX = 0,
+    newY = 0,
+    bufferX = 0,
+    bufferY = 0,
+    friction = 1/20
+
+  function moveBackground() {
+    newX += (bufferX - newX) * friction;
+    newY += (bufferY - newY) * friction;
+
+    background.style.backgroundPositionX = newX + 'px';
+    background.style.backgroundPositionY = newY + 'px';
+    window.requestAnimationFrame(moveBackground);
+  }
+
 document.addEventListener("mousemove", (e) => {
-  background.style.backgroundPositionX = 20 * (Math.max(-100, Math.min(100, window.innerWidth) / 2 - e.x)) / 100 + "px";
-  background.style.backgroundPositionY = 20 * (Math.max(-100, Math.min(100, window.innerHeight) / 2 - e.y)) / 100 + "px";
-  console.log(background.style.backgroundPositionX);
+  bufferX = (-e.x*0.15).toFixed(1);
+  bufferY = (-e.y*0.15).toFixed(1);
 });
+
+moveBackground();
