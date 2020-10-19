@@ -2,5 +2,14 @@
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
+  justify-self: end;
   margin-right: 40px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header__navigation {
+    flex-direction: column;
+    margin: auto;
+  }
 }

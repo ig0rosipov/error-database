@@ -1,0 +1,7 @@
+.header_size_fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transition: .3s;
+}

@@ -9,18 +9,23 @@
 </head>
 
 <body>
+  <header class="header">
+      <a href="../index.html" class="header__logo"></a>
+    <nav class="header__navigation">
+      <a href="" class="header__link link">Электрика</a>
+      <a href="" class="header__link link">Механика</a>
+      <a href="" class="header__link link">На главную</a>
+    </nav>
+    <label class="burger">
+      <input type="checkbox" id="checkbox" class="burger__hidden-checkbox hidden">
+      <div class="burger__stripe"></div>
+      <div class="burger__stripe"></div>
+      <div class="burger__stripe"></div>
+    </label>
+  </header>
   <div class="root">
-    <div class="root__background"></div>
-    <header class="header">
-      <a href="../index.html" class="header__logo">
-      </a>
-      <nav class="header__navigation">
-        <a href="" class="header__link link">Электрика</a>
-        <a href="" class="header__link link">Механика</a>
-        <a href="" class="header__link link">На главную</a>
-      </nav>
-    </header>
 
+    <div class="root__background"></div>
     <main class="main">
 
       <section class="new-error">
@@ -30,13 +35,12 @@
             <li class="form__field spacer">
               <label>
                 <h3 class="form__field-name">Выберите оборудование</h3>
-                <select name="" id="" class="form__select select">
+                <select name="" id="#" class="form__select select">
                   <option value="" class="form__option">Lorem Ipsum</option>
                   <option value="" class="form__option">Lorem Ipsum</option>
                   <option value="" class="form__option">Lorem Ipsum</option>
                 </select>
-                <button class="form__add-machine-button">Добавить оборудование</button> <!-- TODO -->
-              </label>
+                <button class="form__add-machine-button">Добавить оборудование</button>
             </li>
             <li class="form__field spacer">
               <label>
@@ -102,6 +106,7 @@
       <p class="footer__author">IO, 2020</p>
     </footer>
   </div>
+  <script src="../scripts/header.js"></script>
   <script src="../scripts/moving-background.js"></script>
   <script src="../scripts/popup.js"></script>
   <script src="../scripts/file-input.js"></script>
