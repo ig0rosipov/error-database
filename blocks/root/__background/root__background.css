@@ -1,9 +1,11 @@
 .root__background {
   z-index: -1;
   position: fixed;
+  top: -10vh;
+  left: -10vw;
   width: 120vw;
   height: 120vh;
-  background-image: url(../../../images/bluescreen.jpg);
+  background-image: url(../../../images/humor-error.jpg);
   background-position-x: 0px;
   background-position-y: 0px;
   background-repeat: no-repeat;
