@@ -1,7 +1,7 @@
 .select {
   width: 100%;
   color: white;
-  background: #393939;
+  background: inherit;
   outline: none;
   padding: 8px 4px;
   box-sizing: border-box;
