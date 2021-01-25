@@ -1,0 +1,9 @@
+.root {
+  z-index: 0;
+  min-height: 100vh;
+  color: white;
+  background: #2f2f2f;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  position: relative;
+  overflow: hidden;
+}

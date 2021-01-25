@@ -1,0 +1,24 @@
+.button {
+  text-decoration: none;
+  background: none;
+  border: 2px solid rgba(255,255,255);
+  color: white;
+  height: 45px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background .3s ease-out ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.button:hover {
+  background: #46be56;
+}

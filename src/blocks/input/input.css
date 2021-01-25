@@ -1,0 +1,12 @@
+.input {
+  box-sizing: border-box;
+  color: white;
+  padding: 8px 4px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  transition: .3s;
+}

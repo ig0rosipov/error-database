@@ -1,0 +1,14 @@
+.app__background {
+  z-index: -1;
+  position: fixed;
+  top: -5%;
+  left: -5%;
+  width: 120vw;
+  height: 120vh;
+  background-image: url(../../../images/purple-gradient-background.jpg);
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: brightness(20%); */
+}

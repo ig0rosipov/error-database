@@ -1,0 +1,7 @@
+.category__links {
+  display: flex;
+  width: 100%;
+  max-height: 600px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}

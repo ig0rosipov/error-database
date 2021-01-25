@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(./vendor/normalize.css);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(./blocks/app/app.css);
+@import url(./blocks/app/__background/app__background.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__link/_active/header__link_active.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__navigation/header__navigation.css);
+@import url(./blocks/header/_size/header_size_fullscreen.css);
+
+@import url(./blocks/burger/burger.css);
+@import url(./blocks/burger/__fake-input/burger__fake-input.css);
+@import url(./blocks/burger/__stripe/burger__stripe.css);
+
+@import url(./blocks/category/category.css);
+@import url(./blocks/category/__caption/category__caption.css);
+@import url(./blocks/category/__heading/category__heading.css);
+@import url(./blocks/category/__links/category__links.css);
+@import url(./blocks/category/__link/category__link.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__author/footer__author.css);
+
+@import url(./blocks/form/form.css);
+@import url(./blocks/form/__textarea/form__textarea.css);
+@import url(./blocks/form/__submit-button/form__submit-button.css);
+@import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/form/__field/form__field.css);
+@import url(./blocks/form/__field/_type/form__field_type_error.css);
+@import url(./blocks/form/__field-name/form__field-name.css);
+@import url(./blocks/form/__fake-input/form__fake-input.css);
+@import url(./blocks/form/__container/form__container.css);
+@import url(./blocks/form/__add-machine-button/form__add-machine-button.css);
+
+@import url(./blocks/input-error/input-error.css);
+@import url(./blocks/input-error/_displayed/input-error_displayed.css);
+
+
+@import url(./blocks/main/main.css);
+@import url(./blocks/main/__flex-container/main__flex-container.css);
+@import url(./blocks/main/__heading/main__heading.css);
+
+@import url(./blocks/new-error/new-error.css);
+
+@import url(./blocks/new-machine/new-machine.css);
+@import url(./blocks/new-machine/__input-wrapper/new-machine__input-wrapper.css);
+@import url(./blocks/new-machine/__heading/new-machine__heading.css);
+@import url(./blocks/new-machine/__form/new-machine__form.css);
+
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/__close-button/popup__close-button.css);
+
+@import url(./blocks/select/select.css);
+@import url(./blocks/sizer/sizer.css);
+@import url(./blocks/spacer/spacer.css);
+@import url(./blocks/input/input.css);
+@import url(./blocks/input/_type/input_type_correct.css);
+@import url(./blocks/hidden/hidden.css);
+@import url(./blocks/link/link.css);
+@import url(./blocks/button/button.css);
+@import url(./blocks/button/_disabled/button_disabled.css);
+
+/* @import url(./blocks); */

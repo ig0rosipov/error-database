@@ -1,0 +1,12 @@
+.root__background {
+  z-index: -1;
+  position: fixed;
+  width: 120vw;
+  height: 120vh;
+  background-image: url(../../../images/bluescreen.jpg);
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(20%);
+}

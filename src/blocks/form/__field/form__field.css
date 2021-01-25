@@ -1,0 +1,14 @@
+.form__field {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #111111;
+  border-radius: 0px;
+  box-shadow: 5px 5px 0px rgba(0,0,0,.3);
+  transition: .4s;
+  margin: 0;
+}
+
+.form__field:focus-within {
+  box-shadow: 8px 8px 0px #46be56;
+}
