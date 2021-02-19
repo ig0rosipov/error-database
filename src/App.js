@@ -1,32 +1,31 @@
-import './App.css';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-import ErrorBrowser from './components/ErrorBrowser'
-import CreateNote from './components/CreateNote';
-import Header from './components/Header';
-import Background from './components/Background';
+import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ErrorBrowser from "./components/ErrorBrowser";
+import CreateNote from "./components/CreateNote";
+import Header from "./components/Header";
+import Background from "./components/Background";
+import Category from "./components/Category";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="app">
-          <Background />
-          <Header />
-          <Route exact path="/">
-            <section className="category">
-              <h1 className="category__heading">Журнал ошибок</h1>
-              <p className="category__caption">Выберите категорию</p>
-              <div className="category__links">
-                <Link className="category__link button" to="/error-browser">Просмотр</Link>
-                <Link className="category__link button" to="/create-note">Создание</Link>
-              </div>
-            </section>
-          </Route>
-          <Route path="/error-browser">
-            <ErrorBrowser />
-          </Route>
-          <Route path="/create-note">
-            <CreateNote />
-          </Route>
+        <Background />
+        {/* <Header /> */}
+        <div className="testq frosted">
+        <Header />
+          <main className="main">
+            <Route exact path="/">
+              <Category />
+            </Route>
+            <Route path="/error-browser">
+              <ErrorBrowser />
+            </Route>
+            <Route exact path="/create-note">
+              <CreateNote />
+            </Route>
+          </main>
+        </div>
       </div>
     </BrowserRouter>
   );

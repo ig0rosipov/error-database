@@ -30,7 +30,6 @@ function Background() {
     <div
       className="app__background"
       ref={background}
-
     ></div>
   );
 }

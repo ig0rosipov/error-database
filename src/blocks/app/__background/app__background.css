@@ -5,10 +5,9 @@
   left: -5%;
   width: 120vw;
   height: 120vh;
-  background-image: url(../../../images/purple-gradient-background.jpg);
-  background-position-x: 0px;
-  background-position-y: 0px;
+  background-image: url(../../../images/blackbb.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* filter: brightness(20%); */
+  backdrop-filter: blur(10px);
 }

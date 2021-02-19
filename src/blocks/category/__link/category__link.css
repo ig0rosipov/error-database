@@ -1,11 +1,49 @@
 .category__link {
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   width: 100%;
-  margin-right: 2em;
-  min-height: 360px;
-  max-height: 600px;
-  box-sizing: border-box;
+  max-width: 25%;
+  min-height: 80%;
+  max-height: 80%;
+  overflow: hidden;
+
+}
+
+.category__link:hover {
 }
 
 .category__link:last-child {
   margin-right: 0;
+}
+
+.category__name {
+  z-index: 5;
+  margin: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 1.7vw;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: 0.15s;
+  overflow: hidden;
+  text-align: center;
+
+  background: rgb(255, 255, 255, 1);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  border-radius: 1.4vw;
+}
+
+.category__image {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

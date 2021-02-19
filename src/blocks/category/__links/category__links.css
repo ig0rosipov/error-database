@@ -1,7 +1,8 @@
 .category__links {
   display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
   width: 100%;
-  max-height: 600px;
+  min-height: 60%;
   box-sizing: border-box;
-  margin-top: 30px;
 }

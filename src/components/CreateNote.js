@@ -5,13 +5,11 @@ function CreateNote() {
   return (
     <>
       <div className="root__background"></div>
-      <main className="main sizer">
+      <section className="new-error sizer spacer">
+        <h1 className="section-title">Добавить неисправность</h1>
         <CreateNoteForm />
-      </main>
+      </section>
       <NewMachinePopup />
-      <footer className="footer">
-        <p className="footer__author">IO, 2020</p>
-      </footer>
     </>
   );
 }
